@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = 3000;
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const mongoose = require("mongoose");
@@ -131,6 +131,6 @@ app.get("/logout", (req, res) => {
 	res.redirect("/");
 });
 
-app.listen(port, () => {
-	console.log(`Example app listening on port ${port}`);
-});
+app.listen(process.env.PORT || 3000, function(){
+	console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
