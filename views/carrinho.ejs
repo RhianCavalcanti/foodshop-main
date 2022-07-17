@@ -1,0 +1,36 @@
+<%- include ('./partials/header.ejs') %> <%- include ('./partials/navbar.ejs') %>
+<body>
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-12 grid-margin">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Resumo do Pedido</h4>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Nome</th>
+										<th>Preço</th>
+										<th>Quant.</th>
+										<th>Excluir</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- <tr>
+										<td>Pizza de calabresa</td>
+										<td>R$50,00</td>
+									</tr> -->
+								</tbody>
+							</table>
+						</div>
+						<h4>Total: R$<span class="total-titulo">0</span></h4>
+						<a class="btn btn-dark" type="submit" href="/cadastro" role="button">Finalizar Compra</a>
+						</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+<%- include ('./partials/footer.ejs') %>
